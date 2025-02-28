@@ -1,0 +1,152 @@
+[
+    {
+        "name": "Chocolate Chip Cookie Dough Ice Cream",
+        "price": 4.99,
+        "category": "ice-creams",
+        "img": "/images/cafe/ice_cream_image.webp"
+    },
+    {
+        "name": "Caesar Salad",
+        "price": 8.49,
+        "category": "salads",
+        "img": "/images/cafe/salad_image.webp"
+    },
+    {
+        "name": "Iced Caramel Macchiato",
+        "price": 3.79,
+        "category": "drinks",
+        "img": "/images/cafe/drink_image.webp"
+    },
+    {
+        "name": "Vanilla Bean Ice Cream",
+        "price": 4.49,
+        "category": "ice-creams",
+        "img": "/images/cafe/ice_cream_image.webp"
+    },
+    {
+        "name": "Greek Salad",
+        "price": 7.99,
+        "category": "salads",
+        "img": "/images/cafe/salad_image.webp"
+    },
+    {
+        "name": "Mango Smoothie",
+        "price": 4.29,
+        "category": "drinks",
+        "img": "/images/cafe/drink_image.webp"
+    },
+    {
+        "name": "Strawberry Cheesecake Ice Cream",
+        "price": 5.49,
+        "category": "ice-creams",
+        "img": "/images/cafe/ice_cream_image.webp"
+    },
+    {
+        "name": "Caprese Salad",
+        "price": 9.99,
+        "category": "salads",
+        "img": "/images/cafe/salad_image.webp"
+    },
+    {
+        "name": "Iced Green Tea",
+        "price": 2.99,
+        "category": "drinks",
+        "img": "/images/cafe/drink_image.webp"
+    },
+    {
+        "name": "Cookies and Cream Ice Cream",
+        "price": 4.79,
+        "category": "ice-creams",
+        "img": "/images/cafe/ice_cream_image.webp"
+    },
+    {
+        "name": "Chicken Caesar Salad",
+        "price": 10.99,
+        "category": "salads",
+        "img": "/images/cafe/salad_image.webp"
+    },
+    {
+        "name": "Espresso",
+        "price": 2.49,
+        "category": "drinks",
+        "img": "/images/cafe/drink_image.webp"
+    },
+    {
+        "name": "Pistachio Ice Cream",
+        "price": 5.99,
+        "category": "ice-creams",
+        "img": "/images/cafe/ice_cream_image.webp"
+    },
+    {
+        "name": "Spinach and Feta Salad",
+        "price": 8.79,
+        "category": "salads",
+        "img": "/images/cafe/salad_image.webp"
+    },
+    {
+        "name": "Orange Juice",
+        "price": 3.49,
+        "category": "drinks",
+        "img": "/images/cafe/drink_image.webp"
+    },
+    {
+        "name": "Caramel Swirl Ice Cream",
+        "price": 5.29,
+        "category": "ice-creams",
+        "img": "/images/cafe/ice_cream_image.webp"
+    },
+    {
+        "name": "Cobb Salad",
+        "price": 11.49,
+        "category": "salads",
+        "img": "/images/cafe/salad_image.webp"
+    },
+    {
+        "name": "Lemonade",
+        "price": 2.79,
+        "category": "drinks",
+        "img": "/images/cafe/drink_image.webp"
+    },
+    {
+        "name": "Mint Chocolate Chip Ice Cream",
+        "price": 6.49,
+        "category": "ice-creams",
+        "img": "/images/cafe/ice_cream_image.webp"
+    },
+    {
+        "name": "Quinoa Salad",
+        "price": 9.29,
+        "category": "salads",
+        "img": "/images/cafe/salad_image.webp"
+    },
+    {
+        "name": "Smoothie Bowl",
+        "price": 5.99,
+        "category": "drinks",
+        "img": "/images/cafe/drink_image.webp"
+    },
+    {
+        "name": "Rocky Road Ice Cream",
+        "price": 6.99,
+        "category": "ice-creams",
+        "img": "/images/cafe/ice_cream_image.webp"
+    },
+    {
+        "name": "Chicken Avocado Salad",
+        "price": 12.49,
+        "category": "salads",
+        "img": "/images/cafe/salad_image.webp"
+    },
+    {
+        "name": "Iced Latte",
+        "price": 3.29,
+        "category": "drinks",
+        "img": "/images/cafe/drink_image.webp"
+    },
+    {
+        "name": "Cookies and Mint Ice Cream",
+        "price": 7.49,
+        "category": "ice-creams",
+        "img": "/images/cafe/ice_cream_image.webp"
+    }
+]
