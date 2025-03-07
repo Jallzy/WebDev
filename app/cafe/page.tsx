@@ -1,22 +1,27 @@
 "use client"
 
 import Image from "next/image"
-import Link from "next/link"
-import { useSearchParams } from "next/navigation"
+import { useMemo, useState } from "react"
 
 import { Card } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
 import Heading2 from "@/components/ui/heading2"
 import menuData from "@/assets/menu.json"
 
 export default function Cafe() {
-    const searchParams = useSearchParams()
-    const menuCategory = searchParams.get("menuCategory")
+    const [menuCategory, setMenuCategory] = useState("")
 
     // Filter products based on menuCategory
-    const filteredProducts =
-        menuCategory != ""
+    const filterProducts = (menuCategory: string | null) => {
+        console.log(menuCategory)
+        return menuCategory != ""
             ? menuData.filter((product) => product.category === menuCategory)
             : menuData
+    }
+    const visibleProducts = useMemo(
+        () => filterProducts(menuCategory),
+        [menuCategory],
+    )
 
     const categories = [
         { title: "All", url: "" },
@@ -33,26 +38,26 @@ export default function Cafe() {
                 <div className="flex flex-wrap justify-center space-x-5">
                     {/* Categories: All, Icecreams, Salads, Drinks */}
                     {categories.map((e) => (
-                        <Link
-                            href={`/cafe?menuCategory=${e.url}`}
+                        <Button
                             key={e.url}
                             className={
-                                `text-foreground hover:bg-primary/90 mb-5 flex items-center rounded-full border border-transparent px-4 py-2 shadow transition duration-200 last:mb-0 sm:mb-0 ` +
+                                `text-foreground hover:bg-primary/90 mb-5 flex cursor-pointer items-center rounded-full px-4 py-2 shadow transition duration-200 last:mb-0 sm:mb-0 ` +
                                 (menuCategory === e.url
                                     ? `bg-primary`
                                     : `bg-background`)
                             }
+                            onClick={() => setMenuCategory(e.url)}
                         >
                             {e.title}
-                        </Link>
+                        </Button>
                     ))}
                 </div>
                 {/* Products */}
                 <div className="container flex flex-wrap justify-center gap-5">
                     {/* Products - is a data file with structure: {"name", "price", "category", "img"} */}
-                    {filteredProducts.map((product) => (
+                    {visibleProducts.map((product) => (
                         <Card
-                            className="w-[266px] p-2 transition-all hover:shadow-md"
+                            className="w-[266px] p-2 opacity-100 transition-all transition-discrete hover:shadow-md starting:opacity-0"
                             key={product.name}
                         >
                             <Image
